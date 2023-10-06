@@ -31,6 +31,7 @@
 
 - [Beginner’s Guide to Appium 2.0](https://medium.com/@iamfaisalkhatri/beginners-guide-to-appium-2-0-d8118b31837c)
 - [Appium 2 Migration Guide: Migrating From Appium 1.x To Appium 2.x](https://medium.com/@iamfaisalkhatri/appium-2-migration-guide-migrating-from-appium-1-x-to-appium-2-x-f1721b31197)
+- [Basic Appium and Cucumber - BDD Framework](https://medium.com/ralali-engineering/basic-appium-and-cucumber-bdd-framework-3eabef9ec033)
 - [How To Automate ServiceNow With Appium](https://medium.com/@iamfaisalkhatri/how-to-automate-servicenow-with-appium-8cc4aee3ed44)
 - [Complete Tutorial On Appium Parallel Testing- [With Examples]](https://www.lambdatest.com/blog/appium-parallel-testing/)
 - [React Native Testing For Apps On iOS And Android Using Appium](https://www.lambdatest.com/blog/test-react-native-apps-on-ios-and-android/)
