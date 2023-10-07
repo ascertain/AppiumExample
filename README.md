@@ -10,6 +10,13 @@
 
 
 ## How to run the Tests?
+TDD
+- Clean the project by running the command mvn clean
+- Install the necessary packages by running mvn install
+- Locate the testng.xml from test-suite rightclick and run as testNg Suite
+BDD
+- Locate RunCucumberTest from io.cucumber.cucumber_archetype package right click and run as JUnit Test
+  
 
 ### Pre-Requisite:
 
