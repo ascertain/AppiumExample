@@ -1,0 +1,31 @@
+
+### Test Case 1: Verify Successful Search
+
+**Steps:**
+1. **Precondition:** Launch the Unibet website on a mobile browser.
+2. Locate the search bar on the mobile web page.
+3. Enter a valid search query (e.g., "football").
+4. Click the search button.
+5. **Expected Result:** Validate that the search results text is visible.
+6. **Verification:** Verify that the search results contain relevant information related to the search query.
+
+### Test Case 2: Verify No Results for Invalid Search
+
+**Steps:**
+1. **Precondition:** Launch the Unibet website on a mobile browser.
+2. Locate the search bar on the mobile web page.
+3. Enter an invalid search query (e.g., "xyz123").
+4. Click the search button.
+5. **Expected Result:** Validate that the search results page is displayed.
+6. **Verification:** Verify that the search results indicate that there are no results for the given query.
+
+### Test Case 3: Verify Successful Search Displayed
+
+**Steps:**
+1. **Precondition:** Launch the Unibet website on a mobile browser.
+2. Locate the search bar on the mobile web page.
+3. Enter a valid search query (e.g., "football").
+4. Click the search button.
+5. **Expected Result:** Validate that the search results page is displayed.
+6. **Verification:** Verify that the search results contain relevant information related to the search query.
+
