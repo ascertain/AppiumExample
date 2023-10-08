@@ -81,6 +81,41 @@ BDD
 
 ---------------------------------------------------------------
 
+## : Folder Structure for POM based approach 
+## Page Objectt Model
+src/
+├── main/
+│   ├── io.github.mdk.drivers
+│	│   ├──	AndroidDriverManager.java (getDriver() and SetDriver())
+│   ├── io.github.mdk.Servers
+│	│   ├──	AppiumServerManager.java (startServer and stopServer Appium Server)
+└── test/
+    ├── io.github.mdk.android
+		│   ├──	pages
+		│	│   ├──browser
+		│		│   ├──	TheInternetPage.java (POM based mplementaition of TCs)
+		│   ├──	tests
+			│   ├──	AndroidTests.java (## Test Case Calling )
+			│   ├──	BaseTest.java (createAndroidDriver() and quitSession())
+
+## Cucumber 
+src/
+├── main/
+└── test/
+    ├── java
+		├──io.cucumber.cucumber_archetype
+		│   ├──	basecucumber.java
+		│   ├──	RunCucumberTest.java
+		│   ├──	StepDefinitions.java
+		resources
+		├──io.cucumber.cucumber_archetype
+		│   ├──	example.feature
+		│   ├── unibetSearch.feature
+
+			
+
+---------------------------------------------------------------
+
 ## :question: Need Assistance?
 
 mail me @ `subrati@d1lab.com` and Chekout details at https://subrati.d1lab.in/
