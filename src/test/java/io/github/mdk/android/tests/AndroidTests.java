@@ -3,6 +3,10 @@ package io.github.mdk.android.tests;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
 import io.github.mdk.android.pages.browser.TheInternetPage;
 import io.github.mdk.android.pages.proverbial.Notifications;
 import io.github.mdk.android.pages.wdio.DragPage;
@@ -20,101 +24,43 @@ import org.testng.annotations.Test;
  **/
 public class AndroidTests extends BaseTest {
 
-    @Test
+	final TheInternetPage theInternetPage = new TheInternetPage ();
+    
+    @Test(priority = 1)
     public void testChrome () {
-        final TheInternetPage theInternetPage = new TheInternetPage ();
+        
         theInternetPage.navigateToInternetWebsite ();
         //assertEquals (theInternetPage.getPageHeader (), "Welcome to the-internet");
         assertEquals (theInternetPage.getPageHeader (), "Sports News & Latest Football Updates | Unibet Blog");
     }
 
-    @Test
-    public void testDragAndDrop () {
-        final DragPage dragPage = new DragPage ();
-        dragPage.dragAndDropPrices ();
-        assertEquals (dragPage.congratulationsText (), "Congratulations");
-    }
+    @Test(priority = 2)
+    public void testSuccessfulSearch() {
+           theInternetPage.navigateToInternetWebsite ();
 
-    @Test
-    public void testFirefoxBrowser () {
-        final TheInternetPage theInternetPage = new TheInternetPage ();
-        theInternetPage.navigateToInternetWebsite ();
-        assertEquals (theInternetPage.getPageHeader (), "Welcome to the-internet");
-    }
-
-    @Test
-    public void testForm () {
-        final String inputText = "This is Appium Test";
-        final FormPage formPage = new FormPage ();
-        formPage.fillForm (inputText, 2);
-        assertEquals (formPage.getInputText (), inputText);
-        assertEquals (formPage.getSwitchText (), "Click to turn the switch OFF");
-        assertEquals (formPage.getSelectedDropdownValue (), "Appium is awesome");
-        formPage.submitForm ();
-
-        assertEquals (formPage.getActiveMessageTitle (), "This button is");
-        assertEquals (formPage.getActiveMessage (), "This button is active");
-        formPage.closeMessage ();
-
-        assertEquals (formPage.checkInActiveBtn (), "false");
+        // Assert that the text contains the expected result
+        Assert.assertTrue(theInternetPage.testSuccessfulSearch().contains("1586 results found"), "Expected result not found");
 
     }
 
-    @Test
-    public void testHomePageTitle () {
-        final HomePage homePage = new HomePage ();
-        assertEquals (homePage.getTitle (), "WEBDRIVER");
-        assertEquals (homePage.tagLine (), "Demo app for the appium-boilerplate");
+    @Test(priority = 3)
+    public void testNoResultsForInvalidSearch() {
+      
+    	theInternetPage.navigateToInternetWebsite ();
+    	
+        // Assert that the message contains the expected text
+        Assert.assertTrue(theInternetPage.testNoResultsForInvalidSearch().contains("Sorry, no results were found"), "Expected message not found for invalid search");
     }
 
-    @Test
-    public void testNotification () {
-        final Notifications notifications = new Notifications ();
-        assertTrue (notifications.checkNotificationIsDisplayed ());
-        notifications.openNotificationPanel ();
-
-        assertEquals (notifications.getAppNotificationTitle (), "Proverbial");
-        assertEquals (notifications.getNotificationTitle (), "Test Notification");
-        assertEquals (notifications.getNotificationText (), "Please enjoy this notification");
-    }
-
-    @Test
-    public void testSignUp () {
-        final SignUpPage signUpPage = new SignUpPage ();
-        signUpPage.signUp ("test@email.com", "Pass@12345");
-        assertEquals (signUpPage.getSuccessMessageTitle (), "Signed Up!");
-        assertEquals (signUpPage.getSuccessMessage (), "You successfully signed up!");
-        signUpPage.closeSuccessMessage ();
-    }
-
-    @Test
-    public void testSwipeOnElement () {
-        final SwipePage swipePage = new SwipePage ();
-        swipePage.performHorizontalSwipe ();
-        swipePage.performVerticalSwipe ();
+    @Test(priority = 4)
+    public void testSearchResultDisplayFeature() {
+        
+    	theInternetPage.navigateToInternetWebsite ();
+    	
+    	// Validate that the search results container is present
+        
+        Assert.assertTrue(theInternetPage.testSearchResultDisplayFeature().isDisplayed(), "Search results container is not displayed");
 
     }
-
-    @Test
-    public void testSwipeTillElement () {
-
-        final SwipePage swipePage = new SwipePage ();
-        assertEquals (swipePage.swipeTillElement (), "You found me!!!");
-    }
-
-    @Test
-    public void testSwipeUsingScrollIntoView () {
-        final SwipePage swipePage = new SwipePage ();
-        assertEquals (swipePage.swipeAndFindElement (), "You found me!!!");
-    }
-
-    @Test
-    public void testWebView () {
-        final WebViewPage webViewPage = new WebViewPage ();
-
-        assertEquals (webViewPage.getMainPageText (),
-            "Next-gen browser and mobile automation test framework for Node.js");
-        webViewPage.switchToNativeApp ();
-    }
-
+    
 }
