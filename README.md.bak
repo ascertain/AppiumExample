@@ -45,7 +45,7 @@
 ---------------------------------------------------------------
 
 ## How to run the Tests?
-TDD with POM appoach 
+TDD
 - Clean the project by running the command mvn clean
 - Install the necessary packages by running mvn install
 - Locate the testng.xml from test-suite rightclick and run as testNg Suite
@@ -62,6 +62,14 @@ BDD
 
 ### :movie_camera: Tutorial for Installing Android Studio on Windows 10
 [![Watch the video](https://img.youtube.com/vi/CMrfuCR6W94/hqdefault.jpg)](https://youtu.be/CMrfuCR6W94)
+
+- Run the tests using `TestNG`:
+
+  Right click on `test-suite\testng.xml` and select `Run test-suite\testng.xml`
+
+- Run the tests using `Maven`:
+
+  `mvn clean install`
 
 ---------------------------------------------------------------
 
