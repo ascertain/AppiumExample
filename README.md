@@ -159,7 +159,7 @@ That's it! You should now have Android Studio installed on your Windows 10 machi
 ## : Folder Structure for POM based approach 
 ## Page Objectt Model
 
-[POMStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/POMStructure.JPG)
+![POMStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/POMStructure.JPG)
 
 src/
 ├── main/
@@ -176,7 +176,7 @@ src/
 			│   ├──	AndroidTests.java (## Test Case Calling )
 			│   ├──	BaseTest.java (createAndroidDriver() and quitSession())
 
-[BDDStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/Cucumber.JPG)
+![BDDStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/Cucumber.JPG)
 
 ## Cucumber 
 src/

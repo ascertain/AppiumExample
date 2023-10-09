@@ -61,6 +61,40 @@ BDD
     - For running iOS tests, iOS Simulator needs to be started and should be in running state 
 	- Install Cucumber Eclipse Plugin
 	
+	To install the Cucumber Eclipse plugin, you can follow these steps:
+
+		1. **Open Eclipse:**
+		   - Ensure that Eclipse IDE is installed on your machine.
+
+		2. **Navigate to the Eclipse Marketplace:**
+		   - Open Eclipse and go to the "Help" menu.
+		   - Select "Eclipse Marketplace."
+
+		3. **Search for Cucumber Plugin:**
+		   - In the Eclipse Marketplace dialog, there is a search bar. Enter "Cucumber" in the search bar.
+
+		4. **Find and Install Cucumber Eclipse Plugin:**
+		   - You should see the "Cucumber Eclipse Plugin" in the search results.
+		   - Click on the "Go to the full listing" link for more details.
+		   - Click the "Go to the full listing" link to see the details of the plugin.
+		   - Click the "Install" button to initiate the installation process.
+
+		5. **Follow the Installation Wizard:**
+		   - Follow the instructions in the installation wizard.
+		   - You might need to review the list of features to be installed and accept the terms of the license agreement.
+		   - Click "Finish" to complete the installation.
+
+		6. **Restart Eclipse:**
+		   - After the installation is complete, Eclipse will prompt you to restart.
+		   - Restart Eclipse for the changes to take effect.
+
+		7. **Verify Installation:**
+		   - Once Eclipse has restarted, you can verify that the Cucumber plugin is installed by going to "Window" > "Preferences" > "Cucumber" in the Eclipse menu.
+
+		Now, you should be able to use Cucumber features and scenarios in your Eclipse IDE. If you are working with Java, ensure that you have the necessary Cucumber libraries in your project.
+
+		If you encounter any issues during the installation, make sure that your Eclipse IDE is up to date, and you may also want to check for compatibility between the Cucumber Eclipse plugin version and your Eclipse IDE version.
+			
 ### Tutorial for Installing Android Studio on Windows 10
 To install Android Studio on Windows 10, you can follow these steps:
 
