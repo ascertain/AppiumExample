@@ -60,7 +60,7 @@ BDD
     - Android Emulator should be created in local machine and should be in running state
     - For running iOS tests, iOS Simulator needs to be started and should be in running state 
 
-### Tutorial for Installing Android Studio on Windows 10
+### :movie_camera: Tutorial for Installing Android Studio on Windows 10
 [![Watch the video](https://img.youtube.com/vi/CMrfuCR6W94/hqdefault.jpg)](https://youtu.be/CMrfuCR6W94)
 
 ---------------------------------------------------------------
@@ -84,7 +84,7 @@ BDD
 ## : Folder Structure for POM based approach 
 ## Page Objectt Model
 
-[POMStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/POMStructure.JPG)
+[GitHub Logo](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/POMStructure.JPG)
 
 src/
 ├── main/
@@ -100,8 +100,6 @@ src/
 		│   ├──	tests
 			│   ├──	AndroidTests.java (## Test Case Calling )
 			│   ├──	BaseTest.java (createAndroidDriver() and quitSession())
-
-[BDDStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/Cucumber.JPG)
 
 ## Cucumber 
 src/
