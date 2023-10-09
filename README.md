@@ -3,8 +3,6 @@
 
 - This repository contains the example code for running Android Mobile Automation tests with TDD framwork
   using [Appium 2.0](https://appium.io/docs/en/2.0/intro/)
-- [WebdriverIO demo app](https://github.com/webdriverio/native-demo-app/releases) is used as a demo mobile application
-  run tests
 - This repo uses `Maven` as build tool and `TestNG` testing framework to run the tests.
 - This repo is also contains the example code for running Android Mobile Automation tests in BDD framwork
 
