@@ -59,10 +59,51 @@ BDD
     - JAVA JDK 11 should be installed
     - Android Emulator should be created in local machine and should be in running state
     - For running iOS tests, iOS Simulator needs to be started and should be in running state 
+	- Install Cucumber Eclipse Plugin
+	
+### Tutorial for Installing Android Studio on Windows 10
+To install Android Studio on Windows 10, you can follow these steps:
 
-### :movie_camera: Tutorial for Installing Android Studio on Windows 10
-[![Watch the video](https://img.youtube.com/vi/CMrfuCR6W94/hqdefault.jpg)](https://youtu.be/CMrfuCR6W94)
+1. **Download Android Studio:**
+   - Visit the [official Android Studio download page](https://developer.android.com/studio).
+   - Click on the "Download" button.
 
+2. **Run the Installer:**
+   - Once the download is complete, run the installer executable file (e.g., `android-studio-ide-xxx.xxx.xxx-windows.exe`).
+
+3. **Follow the Installation Wizard:**
+   - The Android Studio Setup Wizard will appear.
+   - Click "Next" to begin the installation.
+
+4. **Select Components:**
+   - Choose the components you want to install. The default selections are usually sufficient.
+
+5. **Choose Installation Location:**
+   - Select the destination folder for the installation or use the default location.
+   - Click "Next" to continue.
+
+6. **Select Start Menu Folder:**
+   - Choose a Start Menu folder or use the default.
+   - Click "Install" to start the installation.
+
+7. **Complete the Installation:**
+   - Once the installation is complete, click "Next."
+
+8. **Configure SDK Components:**
+   - Android Studio will prompt you to install the Android SDK components. Click "Finish" to let Android Studio download and install the necessary components.
+
+9. **Launch Android Studio:**
+   - After the SDK components installation is complete, click "Finish" to exit the Setup Wizard.
+   - Launch Android Studio. The first time you run Android Studio, it will download additional components, so be patient.
+
+10. **Complete the Android Studio Setup:**
+    - Follow the on-screen instructions to complete the Android Studio setup.
+    - Set up the Android Virtual Device (AVD) if you want to run Android emulators.
+
+11. **Update SDK and Plugins:**
+    - After launching Android Studio, it's a good idea to check for updates. Go to "Help" > "Check for Updates" and update the IDE and plugins if needed.
+
+That's it! You should now have Android Studio installed on your Windows 10 machine. You can start developing Android applications by creating new projects or opening existing ones.
 ---------------------------------------------------------------
 
 ## :writing_hand: Blog Links
@@ -84,7 +125,7 @@ BDD
 ## : Folder Structure for POM based approach 
 ## Page Objectt Model
 
-[GitHub Logo](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/POMStructure.JPG)
+[POMStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/POMStructure.JPG)
 
 src/
 ├── main/
@@ -100,6 +141,8 @@ src/
 		│   ├──	tests
 			│   ├──	AndroidTests.java (## Test Case Calling )
 			│   ├──	BaseTest.java (createAndroidDriver() and quitSession())
+
+[BDDStructure](https://github.com/ascertain/AppiumExample/blob/main/src/test/resources/Cucumber.JPG)
 
 ## Cucumber 
 src/
